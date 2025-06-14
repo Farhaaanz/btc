@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Budget Tracker</h1>
+
+  <form id="budget-form">
+    <label>Date: <input type="date" id="date" required /></label>
+    <label>Description: <input type="text" id="description" placeholder="Description" required /></label>
+    <label>Category: <input type="text" id="category" placeholder="Category" required /></label>
+    <label>Amount (৳): <input type="number" id="amount" placeholder="Amount" required /></label>
+    <label>Type:
+      <select id="type">
+        <option value="Income">Income</option>
+        <option value="Expense">Expense</option>
+      </select>
+    </label>
+    <button type="submit">Add Entry</button>
+  </form>
+
+  <hr />
+
+  <h2>Summary</h2>
+  <p id="summary">Loading...</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
